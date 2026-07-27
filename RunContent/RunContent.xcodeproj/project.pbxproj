@@ -6,11 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BC9DBAFA301824B700B16F29 /* RunContent Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BC9DBAF0301824B600B16F29 /* RunContent Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC9DBAF8301824B700B16F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD76DA830179B4700E85401 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9DBAEF301824B600B16F29;
+			remoteInfo = "RunContent Watch App Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC9DBAFB301824B700B16F29 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BC9DBAFA301824B700B16F29 /* RunContent Watch App Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BC9DBAF0301824B600B16F29 /* RunContent Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunContent Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD76DB030179B4700E85401 /* RunContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		BC9DBAF1301824B600B16F29 /* RunContent Watch App Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RunContent Watch App Watch App";
+			sourceTree = "<group>";
+		};
 		BCD76DB230179B4700E85401 /* RunContent */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RunContent;
@@ -19,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC9DBAED301824B600B16F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD76DAD30179B4700E85401 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD76DB230179B4700E85401 /* RunContent */,
+				BC9DBAF1301824B600B16F29 /* RunContent Watch App Watch App */,
 				BCD76DB130179B4700E85401 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD76DB030179B4700E85401 /* RunContent.app */,
+				BC9DBAF0301824B600B16F29 /* RunContent Watch App Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +91,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC9DBAEF301824B600B16F29 /* RunContent Watch App Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9DBAFE301824B700B16F29 /* Build configuration list for PBXNativeTarget "RunContent Watch App Watch App" */;
+			buildPhases = (
+				BC9DBAEC301824B600B16F29 /* Sources */,
+				BC9DBAED301824B600B16F29 /* Frameworks */,
+				BC9DBAEE301824B600B16F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC9DBAF1301824B600B16F29 /* RunContent Watch App Watch App */,
+			);
+			name = "RunContent Watch App Watch App";
+			packageProductDependencies = (
+			);
+			productName = "RunContent Watch App Watch App";
+			productReference = BC9DBAF0301824B600B16F29 /* RunContent Watch App Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BCD76DAF30179B4700E85401 /* RunContent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCD76DBB30179B4900E85401 /* Build configuration list for PBXNativeTarget "RunContent" */;
@@ -55,10 +120,12 @@
 				BCD76DAC30179B4700E85401 /* Sources */,
 				BCD76DAD30179B4700E85401 /* Frameworks */,
 				BCD76DAE30179B4700E85401 /* Resources */,
+				BC9DBAFB301824B700B16F29 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC9DBAF9301824B700B16F29 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BCD76DB230179B4700E85401 /* RunContent */,
@@ -80,6 +147,9 @@
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
+					BC9DBAEF301824B600B16F29 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					BCD76DAF30179B4700E85401 = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -100,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				BCD76DAF30179B4700E85401 /* RunContent */,
+				BC9DBAEF301824B600B16F29 /* RunContent Watch App Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC9DBAEE301824B600B16F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD76DAE30179B4700E85401 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +193,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC9DBAEC301824B600B16F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD76DAC30179B4700E85401 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +209,81 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BC9DBAF9301824B700B16F29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9DBAEF301824B600B16F29 /* RunContent Watch App Watch App */;
+			targetProxy = BC9DBAF8301824B700B16F29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BC9DBAFC301824B700B16F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W2B77PZFL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "RunContent Watch App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cumber96.RunContent;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cumber96.RunContent.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		BC9DBAFD301824B700B16F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W2B77PZFL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "RunContent Watch App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cumber96.RunContent;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cumber96.RunContent.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
 		BCD76DB930179B4900E85401 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +472,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC9DBAFE301824B700B16F29 /* Build configuration list for PBXNativeTarget "RunContent Watch App Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9DBAFC301824B700B16F29 /* Debug */,
+				BC9DBAFD301824B700B16F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCD76DAB30179B4700E85401 /* Build configuration list for PBXProject "RunContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
