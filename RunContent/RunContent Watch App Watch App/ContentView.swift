@@ -10,6 +10,7 @@ struct ContentView: View {
                 Text(workoutManager.statusMessage)
                     .font(.caption)
                     .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
 
                 metricView(
                     title: "시간",
@@ -42,21 +43,67 @@ struct ContentView: View {
                     )
                 )
 
-                if workoutManager.isWorkoutRunning {
-                    Button(
-                        "운동 종료",
-                        role: .destructive
-                    ) {
-                        workoutManager.stopWorkout()
-                    }
-                } else {
-                    Button("운동 시작") {
-                        workoutManager.startWorkout()
-                    }
-                    .buttonStyle(.borderedProminent)
-                }
+                workoutControls
             }
             .padding()
+        }
+    }
+
+    @ViewBuilder
+    private var workoutControls: some View {
+        if workoutManager.isWorkoutEnding {
+            ProgressView()
+                .padding(.top, 4)
+
+            Text("운동을 저장하고 있어요")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+
+        } else if workoutManager.isWorkoutRunning {
+            if workoutManager.isWorkoutPaused {
+                Button {
+                    workoutManager.resumeWorkout()
+                } label: {
+                    Label(
+                        "운동 재개",
+                        systemImage: "play.fill"
+                    )
+                }
+                .buttonStyle(.borderedProminent)
+
+            } else {
+                Button {
+                    workoutManager.pauseWorkout()
+                } label: {
+                    Label(
+                        "일시정지",
+                        systemImage: "pause.fill"
+                    )
+                }
+                .buttonStyle(.borderedProminent)
+            }
+
+            Button(
+                role: .destructive
+            ) {
+                workoutManager.stopWorkout()
+            } label: {
+                Label(
+                    "운동 종료",
+                    systemImage: "stop.fill"
+                )
+            }
+
+        } else {
+            Button {
+                workoutManager.startWorkout()
+            } label: {
+                Label(
+                    "운동 시작",
+                    systemImage: "figure.run"
+                )
+            }
+            .buttonStyle(.borderedProminent)
         }
     }
 
