@@ -1,17 +1,14 @@
-//
-//  RunContentApp.swift
-//  RunContent
-//
-//  Created by 이홍원 on 7/27/26.
-//
-
 import SwiftUI
 
 @main
 struct RunContentApp: App {
+    @StateObject private var connectivityManager =
+        ConnectivityManager.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(connectivityManager)
         }
     }
 }
