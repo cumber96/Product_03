@@ -230,6 +230,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "RunContent Watch App";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "러닝 중 심박수, 거리, 걸음 수 등의 운동 데이터를 확인하기 위해 건강 데이터 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "완료한 러닝 기록을 건강 앱에 저장하기 위해 건강 데이터 쓰기 권한이 필요합니다.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cumber96.RunContent;
@@ -265,6 +266,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "RunContent Watch App";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "러닝 중 심박수, 거리, 걸음 수 등의 운동 데이터를 확인하기 위해 건강 데이터 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "완료한 러닝 기록을 건강 앱에 저장하기 위해 건강 데이터 쓰기 권한이 필요합니다.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cumber96.RunContent;
